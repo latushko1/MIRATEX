@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body{
+        font-family: 'SF Pro Display', sans-serif;
+    }
+}
+
+@layer components{
+    .container{
+        @apply max-w-[1050px]
+    }
+}
+
+.links{
+    position: relative;
+}
+
+.links::before{
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background-color: black;
+    color: black;
+    bottom: -8px;
+    left: 0;
+    transition: width .4s ease-in-out;
+}
+
+.links:hover.links::before{
+    width: 100%;
+}
+
+.link-share-img{
+    transition: all .4s ease-in-out;
+}
+.link-share:hover .link-share-img{
+    fill: black;
+}
+
+.link-login-img{
+    transition: all .4s ease-in-out;
+}
+
+.link-login:hover .link-login-img{
+    fill: black;
+}
+
+/* <----------------------- Burger menu setup -----------------------> */
+
+.toggle-btn{
+    position: sticky;
+    margin: 1.4em;
+    width: 40px;
+    height: 12px;
+    right: 0;
+    z-index: 1;
+}
+
+.toggle-btn:hover{
+    cursor: pointer;
+}
+
+
+.scroll{
+    overflow-y: hidden;
+}
+
+span.one{
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: rgb(0, 0, 0);
+}
+
+span.two{
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    margin-top: 12px;
+}
+
+.menu{
+    z-index: 0;
+    position: absolute;
+    background: #ffffff;
+    height: 100vh;
+    width: 100%;
+    top: -100%;
+
+}
+
+.data{
+    padding: 8em 0 0 2em;
+    text-align: left;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 60px;
+}
+
+.list-title{
+    color: gray;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 24px;
+}
+
+.li{
+    margin-top: 1em;
+}
+
+.list-link{
+    position: absolute;
+    color: #161616;
+    font-size: 42px;
+    text-decoration: none;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+
+.footer-title{
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+    font-variant: small-caps;
+    color: #FFFFFF;
+}
+
+.wrapper 	{ 
+    max-width: 500px;
+}
+.form-group {
+    margin-bottom: 20px; 
+      position: relative;
+}
+.form-group:last-child{
+    margin-bottom: 0px;
+}
+.f-inputbox,
+.f-textbox{
+  padding: 22px 20px 10px 20px;
+   border: none;
+   border-bottom: 2px solid #c2c2c2;
+   background-color: transparent;
+   width: 100%;
+   font-size: 18px;
+   line-height: 26px;
+   font-family: 'Poppins', sans-serif;
+   position: relative;
+   z-index: 2;
+box-shadow: none;
+-webkit-box-shadow: none;
+ }
+.f-textbox{
+    resize: none;
+}
+.f-label{
+   font-size: 18px;
+   line-height: 26px;
+   font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    z-index: 1;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+}
+.form-group input.f-inputbox:focus + label,
+.f-label.f-up{
+  top: 0px;
+  left: 2px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.f-inputbox:focus,
+.f-textbox:focus{
+    box-shadow: none; -webkit-box-shadow: none;
+}
+
+input{
+    outline: none;
+}
+
+label{
+    outline: none;
+}
+

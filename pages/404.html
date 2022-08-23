@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="http://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>404</title>
+</head>
+<body>
+
+    <header>
+        <nav class="border-black border-b-2">
+            <div class="container flex items-center justify-between py-[20px]">
+                <a href="index.html"><img src="../img/logo.svg" alt="logo"></a>
+                <ul class="flex gap-[21px] lg:hidden">
+                    <li><a class=" text-primary text-base uppercase all-small-caps links" href="#">Каталог</a></li>
+                    <li><a class=" text-primary text-base uppercase all-small-caps links" href="#">Контакты</a></li>
+                </ul>
+                <a class="text-primary text-base uppercase all-small-caps links lg:hidden" href="earnings.html">Зарабатывай с нами</a> 
+                <ul class="flex gap-10 lg:hidden">
+                    <li><a class="flex link-share gap-[10px] text-primary text-base uppercase all-small-caps links" href="#">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="link-share-img" d="M19 21.5H10C8.89543 21.5 8 20.6046 8 19.5V15.5H10V19.5H19V5.5H10V9.5H8V5.5C8 4.39543 8.89543 3.5 10 3.5H19C20.1046 3.5 21 4.39543 21 5.5V19.5C21 20.6046 20.1046 21.5 19 21.5ZM12 16.5V13.5H3V11.5H12V8.5L17 12.5L12 16.5Z" fill="#DADADA"/>
+                        </svg>
+                        Поделиться</a></li>
+                    <li><a class="link-login flex gap-[10px] text-primary text-base uppercase all-small-caps links" href="#">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="link-login-img" d="M19 21.5H10C8.89543 21.5 8 20.6046 8 19.5V15.5H10V19.5H19V5.5H10V9.5H8V5.5C8 4.39543 8.89543 3.5 10 3.5H19C20.1046 3.5 21 4.39543 21 5.5V19.5C21 20.6046 20.1046 21.5 19 21.5ZM12 16.5V13.5H3V11.5H12V8.5L17 12.5L12 16.5Z" fill="#DADADA"/>
+                            </svg>                            
+                    Войти</a></li>
+                </ul>
+                <div class="toggle-btn hidden lg:block">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                </div>
+                
+            </div>
+        </nav>
+
+        <div class="menu">
+            <div class="data">
+                <ul class="list">
+                    <li class="list-title">НАВИГАЦИЯ</li>
+                    <li class="list-item"><a class="list-link text-primary text-base uppercase all-small-caps links sm:text-[30px]" href="#">Каталог</a></li>
+                    <li class="list-item"><a class="list-link text-primary text-base uppercase all-small-caps links sm:text-[30px]" href="#">Контакты</a></li>
+                    <li class="list-item"><a class="list-link text-primary text-base uppercase all-small-caps links sm:text-[30px]" href="#">Зарабатывай с нами</a></li>
+                     <li class="list-item"><a class="list-link flex link-share gap-[10px] text-primary text-base uppercase all-small-caps links sm:text-[30px]" href="#">Поделиться</a></li>
+                    <li class="list-item"><a class="list-link link-login flex gap-[10px] text-primary text-base uppercase all-small-caps links sm:text-[30px]" href="#">Войти</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+
+    <section class="grid container place-items-center min-h-[70vh] overflow-hidden">
+        <div class="container flex items-center justify-center text-center sm:flex-col">
+            <p class="uppercase text-[48px] leading-10 text-black pr-6 border-r-2 border-black sm:border-r-0 sm:pr-0 sm:pb-4 font-bold">404</p>
+            <p class="uppercase text-[48px] leading-[3.5rem] text-black pl-6 sm:pl-0 ">Страница не найдена</p>
+        </div>
+    </section>
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

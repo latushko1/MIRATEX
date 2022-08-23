@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="http://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>MIratex House</title>
+</head>
+<body>
+
+    <div class="inner-cursor"></div>
+    <div class="outer-cursor"></div>
+
+    <header>
+        <nav class="border-black border-b-2">
+            <div class="container flex items-center justify-between py-[20px]">
+                <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+                <ul class="flex gap-[21px] lg:hidden">
+                    <li><a class=" text-primary text-base uppercase all-small-caps links" href="pages/404.html">Каталог</a></li>
+                    <li><a class=" text-primary text-base uppercase all-small-caps links" href="pages/404.html">Контакты</a></li>
+                </ul>
+                <a class="text-primary text-base uppercase all-small-caps links lg:hidden" href="earnings.html">Зарабатывай с нами</a> 
+                <ul class="flex gap-10 lg:hidden">
+                    <li><a class="flex link-share gap-[10px] text-primary text-base uppercase all-small-caps links" href="pages/404.html">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="link-share-img" d="M19 21.5H10C8.89543 21.5 8 20.6046 8 19.5V15.5H10V19.5H19V5.5H10V9.5H8V5.5C8 4.39543 8.89543 3.5 10 3.5H19C20.1046 3.5 21 4.39543 21 5.5V19.5C21 20.6046 20.1046 21.5 19 21.5ZM12 16.5V13.5H3V11.5H12V8.5L17 12.5L12 16.5Z" fill="#DADADA"/>
+                        </svg>
+                        Поделиться</a></li>
+                    <li><a class="link-login flex gap-[10px] text-primary text-base uppercase all-small-caps links" href="pages/404.html">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="link-login-img" d="M19 21.5H10C8.89543 21.5 8 20.6046 8 19.5V15.5H10V19.5H19V5.5H10V9.5H8V5.5C8 4.39543 8.89543 3.5 10 3.5H19C20.1046 3.5 21 4.39543 21 5.5V19.5C21 20.6046 20.1046 21.5 19 21.5ZM12 16.5V13.5H3V11.5H12V8.5L17 12.5L12 16.5Z" fill="#DADADA"/>
+                            </svg>                            
+                    Войти</a></li>
+                </ul>
+                <div class="toggle-btn hidden lg:block">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                </div>
+                
+            </div>
+        </nav>
+
+        <div class="menu">
+            <div class="data">
+                <ul class="list">
+                    <li class="list-title">НАВИГАЦИЯ</li>
+                    <li class="list-item"><a class="list-link text-primary text-base uppercase all-small-caps links sm:text-[30px]" href="pages/404.html">Каталог</a></li>
+                    <li class="list-item"><a class="list-link text-primary text-base uppercase all-small-caps links sm:text-[30px]" href="pages/404.html">Контакты</a></li>
+                    <li class="list-item"><a class="list-link text-primary text-base uppercase all-small-caps links sm:text-[30px]" href="pages/404.html">Зарабатывай с нами</a></li>
+                     <li class="list-item"><a class="list-link flex link-share gap-[10px] text-primary text-base uppercase all-small-caps links sm:text-[30px]" href="pages/404.html">Поделиться</a></li>
+                    <li class="list-item"><a class="list-link link-login flex gap-[10px] text-primary text-base uppercase all-small-caps links sm:text-[30px]" href="pages/404.html">Войти</a></li>
+                </ul>
+            </div>
+        </div>
+
+       <div class="container flex justify-between items-center my-[50px] flex-wrap">
+        <div class="pb-10">
+            <h4 class="text-primary font-semibold text-base uppercase">Кто мы такие?</h4>
+            <h2 class="text-primary text-6xl uppercase ">MIratex House</h2>
+        </div>
+    
+           <p class="max-w-[382px] text-primary text-sm font-medium">Мы перерабатываем грузовые контейнеры в автономные крипто-дома, гостиницы, офисы, кафе, которые можно разместить там, где Вы хотите. Они абсолютно не зависят от коммуникаций, полностью готовы к эксплуатации, а в свободное от работы время они добывают крипто-валюту.</p>
+
+           <img class="mt-[50px]" src="img/hero-img.jpg" alt="hero-img">
+       </div>
+
+       <div class="container flex justify-end my-[150px]">
+        <p class="text-primary text-sm max-w-[400px] flex justify-end">В последнее время мир меняется и совсем не понятно, что будет дальше, поэтому мы объединяем людей, которые хотят жить и вести бизнес по своим правилам.</p>
+       </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h2 class="text-primary text-6xl uppercase sm:text-4xl">КАК ВЫ МОЖЕТЕ <br> ИХ ИСПОЛЬЗОВАТЬ</h2>
+            <div class="flex gap-[85px] mt-[70px] flex-wrap">
+                <div class="flex gap-[30px] items-center max-w-[350px]">
+                    <img src="img/arrow-down.svg" alt="arrow">
+                    <p class="text-primary text-xl font-medium leading-[21px]">Дополнительное место для дополнительных опций</p>
+                </div>
+                <div class="flex gap-[30px] items-center max-w-[350px]">
+                    <img src="img/arrow-down.svg" alt="arrow">
+                    <p class="text-primary text-xl font-medium leading-[21px]">Доход от аренды для мгновенного возврата вложений</p>
+                </div>
+            </div>
+
+            <div class="container my-[150px] flex justify-end flex-wrap sm:justify-start px-0">
+                <div class="max-w-[400px] sm:max-w-full">
+                    <h2 class="text-primary text-6xl uppercase sm:text-4xl">ЗАРАБАТЫВАЙ С НАМИ</h2>
+                    <p class="py-10 max-w-[382px] text-primary text-sm font-medium">ЛЮБАЯ ИЗ НАШИХ МОДЕЛЕЙ ПОЗВОЛИТ ВАМ ЖИТЬ ИЛИ ЗАПУСТИТЬ БИЗНЕС АБСОЛЮТНО АВТОНОМНО, А ЕСЛИ ВЫ ОСНАСТИТЕ ЕЕ МОДУЛЕМ «МАЙНИНГ», ОНА ЕЩЕ И БУДЕТ ПРИНОСИТЬ ВАМ ДЕНЬГИ.
+                    </p>
+                    <a class="bg-white border-2 border-black py-[22px] px-[125px] items-center flex justify-center text-primary text-sm font-medium hover:underline" href="pages/404.html">Узнать&nbsp;больше</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2 class="text-primary text-6xl uppercase pb-[70px]">Каталог</h2>
+            <ul class="flex flex-wrap gap-6">
+                <li><a class="text-primary text-base leading-[17px] uppercase hover:underline" href="pages/404.html">Model home 15</a></li>
+                <li><a class="text-primary text-base leading-[17px] uppercase hover:underline" href="pages/404.html">Model home 30</a></li>
+                <li><a class="text-primary text-base leading-[17px] uppercase hover:underline" href="pages/404.html">Model home lux</a></li>
+                <li><a class="text-primary text-base leading-[17px] uppercase hover:underline" href="pages/404.html">Model cafe l15</a></li>
+                <li><a class="text-primary text-base leading-[17px] uppercase hover:underline" href="pages/404.html">Model cafe s15</a></li>
+                <li><a class="text-primary text-base leading-[17px] uppercase hover:underline" href="pages/404.html">Model hostel 15</a></li>
+                <li><a class="text-primary text-base leading-[17px] uppercase hover:underline" href="pages/404.html">Model hostel 16</a></li>
+                <li><a class="text-primary text-base leading-[17px] uppercase hover:underline" href="pages/404.html">Model office 16</a></li>
+                <li><a class="text-primary text-base leading-[17px] uppercase hover:underline" href="pages/404.html">Model office 30</a></li>
+                <li><a class="text-primary text-base leading-[17px] uppercase hover:underline" href="pages/404.html">Model shop 15</a></li>
+                <li><a class="text-primary text-base leading-[17px] uppercase hover:underline" href="pages/404.html">Model sleep box</a></li>
+                <li><a class="text-primary text-base leading-[17px] uppercase hover:underline" href="pages/404.html">model wc</a></li>
+            </ul>
+            <a class="mt-[70px] bg-white border-2 border-black py-[22px] px-[125px] items-center flex justify-center text-primary text-sm font-medium hover:underline" href="pages/404.html">Скачать&nbsp;каталог</a>
+        </div>
+    </section>
+
+
+    <section class="mt-[150px] border-t-2 border-black">
+        <div class="container">
+            <h1 class="uppercase text-6xl text-primary font-semibold py-10">Model Home 15</h1>
+            <img class="mb-[150px]" src="img/model-home1.jpg" alt="model-home">
+            <div class="grid grid-cols-2 gap-[20px]">
+                <div class="grid gap-[20px]">
+                    <img src="img/model-home2.jpg" alt="model-home">
+                    <img src="img/model-home3.jpg" alt="model-home">
+                </div>
+                <div class="bg-[url(/img/model-home4.jpg)] bg-cover">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="mt-[150px] border-b-2 border-black pb-2">
+        <div class="container grid grid-cols-2 gap-[20px] md:grid-cols-1 md:place-items-center">
+            <div>
+                <img src="img/L15.jpg" alt="l15">
+                <ul class="flex flex-col gap-[12px] ad:text-center my-[100px]">
+                    <li class="text-primary text-base uppercase font-medium">Изготовлен из одного 20ft контейнера площадью 15 кв.м</li>
+                    <li class="text-primary text-base uppercase font-medium">Имеет полноценное спальное место диван-кровать</li>
+                    <li class="text-primary text-base uppercase font-medium">Кухня с индукционной плитой и холодильником </li>
+                    <li class="text-primary text-base uppercase font-medium">Души и туалет</li>
+                    <li class="text-primary text-base uppercase font-medium">Телевизор</li>
+                    <li class="text-primary text-base uppercase font-medium">Wifi</li>
+                    <li class="text-primary text-base uppercase font-medium">Теплый пол, обогревательное оборудование</li>
+                    <li class="text-primary text-base uppercase font-medium">Климат контроль</li>
+                    <li class="text-primary text-base uppercase font-medium">Автономное электричество</li>
+                    <li class="text-primary text-base uppercase font-medium">Автономная канализация</li>
+                </ul>
+                <a ></a>
+                <a class="mt-[70px] bg-white border-2 border-black py-[22px] px-[125px] items-center flex justify-center text-primary text-sm font-medium hover:underline md:max-w-[100px]" href="pages/404.html">Арендовать&nbsp;или&nbsp;преобрести</a>
+            </div>
+
+            <div class="items-center">
+                <p class="text-primary text-base font-medium pb-[150px] md:pb-10 md:pt-[150px] max-w-[376px]">
+                    Идеальный вариант для жизни. Может быть использован для постоянного проживания, для отдыха на природе, гостевого домика.
+                </p>
+                <img class="mb-[20px]" src="img/L16.jpg" alt="">
+                <img src="img/L17.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="container text-center grid place-items-center my-[280px]">
+            <h2 class="text-primary text-6xl uppercase sm:text-4xl">ЧТО ЕЩЕ МОЖНО СДЕЛАТЬ ИЗ КОНТЕЙНЕРОВ? </h2>
+            <p class="text-primary text-xl font-medium py-[40px]">ОГРОМНОЕ КОЛЛИЧЕСТВО ИДЕЙ В НАШИХ СОЦИАЛЬНЫХ СЕТЯХ:</p>
+            <div class="flex gap-10">
+                <a href="pages/404.html"><img src="img/Instagram - Original.svg" alt="Instagram"></a>
+                <a href="pages/404.html"><img src="img/Facebook - Original.svg" alt="Facebook"></a>
+                <a href="pages/404.html"><img src="img/Pinterest - Original.svg" alt="Pinterest"></a>
+                <a href="pages/404.html"><img src="img/YouTube - Original.svg" alt="YouTube"></a>
+            </di>
+    </section>
+
+    <footer class="bg-primary">
+        <div class="container">
+            <div class="pt-[64px] grid grid-cols-4 gap-[68px] md:grid-cols-2 ad:grid-cols-1">
+                <div>
+                    <img src="img/logo-white.svg" alt="logo">
+                    <p class="text-base text-white leading-4 mt-10">Наша команда берет на себя все: от разработки идеи и до реализации. Функциональность и традиции — это то, что мы внедряем в каждый наш проект.</p>
+                </div>
+
+                <div>
+                    <h5 class="footer-title">Звоните</h5>
+                    <ul class="mt-10 grid gap-[17px] text-white">
+                        <li><a href="tel:+442045770896">GB +4420 45770896</a></li>
+                        <li><a href="tel:+7 4993227009">RU +7 499 3227009</a></li>
+                        <li><a href="tel:+48784806484">PL +48 784 806484</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="footer-title">пишите</h5>
+                    <ul class="mt-10 grid gap-[17px] text-white">
+                        <li><a href="mailto:info@miratexhouse.com">info@miratexhouse.com</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="footer-title">приезжайте</h5>
+                    <ul class="mt-10 grid gap-[17px] text-white">
+                        <li>Miratex House OU</li>
+                        <li>Registry code 14940959</li>
+                        <li>Address: Sepapaja 6, Tallinn</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex justify-between mt-[60px] py-[17px] border-t-2 border-white flex-wrap">
+                <p class="text-white flex">
+                    © MiratexHouse. all rights reserved
+                </p>
+                <ul class="flex gap-8 text-white uppercase flex-wrap">
+                    <li><a href="pages/404.html">Disclaimer</a></li>
+                    <li><a href="pages/404.html">Investments risks</a></li>
+                    <li><a href="pages/404.html">general loam tearms</a></li>
+                    <li><a href="pages/404.html">risk warning</a></li>
+                    <li><a href="pages/404.html">terms of use</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
